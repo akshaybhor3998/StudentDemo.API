@@ -81,7 +81,7 @@ namespace StudentDemo.API.Controllers
 
         }
 
-        [HttpPost]
+        [HttpPut]
         [Route("api/update")]
         public async Task<IActionResult> UpdateStudent(UpdateStudentRequest dto)
         {
@@ -105,7 +105,7 @@ namespace StudentDemo.API.Controllers
             
         }
 
-        [HttpPost]
+        [HttpDelete]
         [Route("api/delete")]
         public async Task<IActionResult> DeleteStudent(IdDTO dto)
         {
