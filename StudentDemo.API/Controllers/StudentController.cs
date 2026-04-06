@@ -99,7 +99,7 @@ namespace StudentDemo.API.Controllers
             }
             catch(Exception ex)
             {
-                _logger.LogError("Update Student API Error : " + ex);
+                _logger.LogError("Update Student API Error Log : " + ex);
                 throw;
             }
             
