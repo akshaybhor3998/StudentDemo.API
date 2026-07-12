@@ -57,7 +57,7 @@ namespace StudentDemo.API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            await _repository.DeleteAsync(id);
+            await _repository.DeleteAsync(id) ;
 
             return NoContent();
         }
