@@ -40,7 +40,7 @@ namespace StudentDemo.API.Controllers
 
             student.Id = id;
 
-            return CreatedAtAction(nameof(Get), new { id }, student);
+            return CreatedAtAction(nameof(Get), new { id }, student) ;
         }
 
         [HttpPut("{id}")]
