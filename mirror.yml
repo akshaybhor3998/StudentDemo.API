@@ -3,6 +3,7 @@ name: Mirror GitHub to GitLab
 on:
   push:
     branches:
+      - master
       - main
 
 jobs:
@@ -22,7 +23,7 @@ jobs:
 
       - name: Add GitLab Remote
         run: |
-          git remote add gitlab https://${{ secrets.GITLAB_USERNAME }}:${{ secrets.GITLAB_TOKEN }}@gitlab.com/<GROUP>/<REPOSITORY>.git
+          git remote add gitlab https://${{ secrets.GITLAB_USERNAME }}:${{ secrets.GITLAB_TOKEN }}@gitlab.com/akshaybhor4031-group/studentdemo.git
 
       - name: Push All Branches
         run: |
