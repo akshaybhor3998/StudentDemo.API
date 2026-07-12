@@ -59,7 +59,7 @@ namespace StudentDemo.API.Controllers
         {
             await _repository.DeleteAsync(id) ;
 
-            return NoContent();
+            return Ok("Data is deleted successfully...!");
         }
     }
 }
